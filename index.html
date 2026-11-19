@@ -74,6 +74,7 @@
   .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
   @media (max-width: 820px) { .grid { grid-template-columns: 1fr; } }
   .card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 22px; box-shadow: var(--shadow); display: flex; flex-direction: column; }
+  .shot { display: block; margin: -22px -22px 18px; width: calc(100% + 44px); aspect-ratio: 16 / 9; object-fit: cover; object-position: top; border-radius: 16px 16px 0 0; border-bottom: 1px solid var(--line); background: var(--bg-soft); }
   .card h3 { margin: 0 0 4px; font-size: 18px; }
   .card .tag { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--accent); }
   .card p { margin: 8px 0 14px; color: var(--muted); font-size: 15px; }
@@ -160,6 +161,7 @@
     <p class="sub"><span data-lang-en>Every one has automated tests, CI on GitHub Actions, Docker and docs in English and Spanish.</span><span data-lang-es>Todos tienen pruebas automatizadas, CI en GitHub Actions, Docker y documentación en inglés y español.</span></p>
     <div class="grid">
       <article class="card">
+        <img class="shot" loading="lazy" src="https://raw.githubusercontent.com/JulianContreras02/laravel-serverless-aws/main/docs/demo/demo.gif" alt="laravel-serverless-aws demo">
         <span class="tag">AWS · Serverless</span>
         <h3>laravel-serverless-aws</h3>
         <p><span data-lang-en>URL shortener API with click analytics, built as a reference for moving legacy PHP to serverless.</span><span data-lang-es>API de acortador de URLs con analítica de clics, hecha como referencia para llevar PHP legacy a serverless.</span></p>
@@ -168,6 +170,7 @@
         <div class="links"><a href="https://github.com/JulianContreras02/laravel-serverless-aws" target="_blank" rel="noopener"><span data-lang-en>Code →</span><span data-lang-es>Código →</span></a></div>
       </article>
       <article class="card">
+        <img class="shot" loading="lazy" src="https://raw.githubusercontent.com/JulianContreras02/laravel-ai-document-extractor/main/docs/demo.gif" alt="laravel-ai-document-extractor demo">
         <span class="tag">AI · Documents</span>
         <h3>laravel-ai-document-extractor</h3>
         <p><span data-lang-en>Reads invoices and receipts (PDFs, scans, phone photos) with the Claude API, checks every number with business rules and sends doubtful documents to human review.</span><span data-lang-es>Lee facturas y recibos (PDF, escaneos, fotos) con la Claude API, valida cada cifra con reglas de negocio y envía los documentos dudosos a revisión humana.</span></p>
@@ -176,6 +179,7 @@
         <div class="links"><a href="https://github.com/JulianContreras02/laravel-ai-document-extractor" target="_blank" rel="noopener"><span data-lang-en>Code →</span><span data-lang-es>Código →</span></a></div>
       </article>
       <article class="card">
+        <img class="shot" loading="lazy" src="https://raw.githubusercontent.com/JulianContreras02/laravel-resilient-batch-jobs/main/docs/demo.gif" alt="laravel-resilient-batch-jobs demo">
         <span class="tag">Reliability</span>
         <h3>laravel-resilient-batch-jobs</h3>
         <p><span data-lang-en>Batch processing that survives crashes and flaky APIs: idempotent watermark, MySQL mutex, a self-healing state machine and retry-safe jobs.</span><span data-lang-es>Procesamiento por lotes que sobrevive a caídas y APIs inestables: marca de agua idempotente, mutex en MySQL, máquina de estados que se recupera sola y jobs seguros ante reintentos.</span></p>
@@ -184,6 +188,7 @@
         <div class="links"><a href="https://github.com/JulianContreras02/laravel-resilient-batch-jobs" target="_blank" rel="noopener"><span data-lang-en>Code →</span><span data-lang-es>Código →</span></a></div>
       </article>
       <article class="card">
+        <img class="shot" loading="lazy" src="https://raw.githubusercontent.com/JulianContreras02/laravel-integrations-kit/main/docs/demo/demo.gif" alt="laravel-integrations-kit demo">
         <span class="tag">Integrations</span>
         <h3>laravel-integrations-kit</h3>
         <p><span data-lang-en>Patterns for connecting systems: OAuth2 client credentials with a stampede-safe token cache, streamed XLSX export to S3, idempotent SFTP delivery with retries.</span><span data-lang-es>Patrones para conectar sistemas: OAuth2 client credentials con caché de token a prueba de estampidas, exportación XLSX en streaming a S3 y entregas SFTP idempotentes con reintentos.</span></p>
@@ -192,6 +197,7 @@
         <div class="links"><a href="https://github.com/JulianContreras02/laravel-integrations-kit" target="_blank" rel="noopener"><span data-lang-en>Code →</span><span data-lang-es>Código →</span></a></div>
       </article>
       <article class="card">
+        <img class="shot" loading="lazy" src="https://raw.githubusercontent.com/JulianContreras02/laravel-pdf-toolkit/main/docs/demo.gif" alt="laravel-pdf-toolkit demo">
         <span class="tag">Security · PDF</span>
         <h3>laravel-pdf-toolkit</h3>
         <p><span data-lang-en>A self-hosted PDF toolkit: merge, split, compress, rotate and convert in a network-isolated Ghostscript/qpdf worker.</span><span data-lang-es>Herramienta PDF autoalojada: une, divide, comprime, rota y convierte en un worker de Ghostscript/qpdf aislado de la red.</span></p>
@@ -200,6 +206,7 @@
         <div class="links"><a href="https://github.com/JulianContreras02/laravel-pdf-toolkit" target="_blank" rel="noopener"><span data-lang-en>Code →</span><span data-lang-es>Código →</span></a></div>
       </article>
       <article class="card">
+        <img class="shot" loading="lazy" src="https://raw.githubusercontent.com/JulianContreras02/cv-builder/main/docs/demo-en.gif" alt="cv-builder demo">
         <span class="tag">Live demo</span>
         <h3>cv-builder</h3>
         <p><span data-lang-en>A free, private resume builder that runs entirely in the browser: three templates, PDF export, Spanish and English.</span><span data-lang-es>Constructor de hojas de vida gratis y privado que funciona todo en el navegador: tres plantillas, exportación a PDF, español e inglés.</span></p>
